@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('./partials/head') %>
-    <title>Sign Up</title>
+    <title>Sign in</title>
     <style>
         body, html {
             height: 100%;
@@ -122,12 +122,7 @@
         <div class="card">
             <div class="card-body">
                 <h1 class="text-center">Sign up</h1>
-                <form action="/user/signup" method="POST">
-                    <div class="form-outline">
-                        <i class="fas fa-user icon"></i>
-                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder=" " required />
-                        <label class="form-label" for="fullName">Your Name</label>
-                    </div>
+                <form action="/user/signin" method="POST">
                     <div class="form-outline">
                         <i class="fas fa-envelope icon"></i>
                         <input type="email" id="email" name="email" class="form-control" placeholder=" " required />
